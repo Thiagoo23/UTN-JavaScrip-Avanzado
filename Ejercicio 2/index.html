@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <title>Textarea</title>
+</header>
+
+<body>
+    <textarea name="mensaje" onkeyup="countChars(this, 100);"></textarea>
+    <p id="caracterMax">100 caracteres restantes</p>
+
+    <script>
+      function countChars(obj, maxLength){
+      var strLength = obj.value.length;
+      if(strLength > maxLength){
+          document.getElementById("caracterMax").innerHTML = '<span style="color: red;">Has superado el límite de '+maxLength+' caracteres</span>';
+      }else{
+          document.getElementById("caracterMax").innerHTML = (maxLength - strLength)+' caracteres restantes';
+      }
+      }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+.boton {
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.azul {
+    background-color: #001965;
+}
+
+.rojo {
+    background-color: #ED0000;
+}
+
+.celeste {
+    background-color: #009EC5;
+}
+
+P {
+    COLOR: white;
+    text-align: center;
+}
